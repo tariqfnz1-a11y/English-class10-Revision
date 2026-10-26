@@ -1,1 +1,541 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123b55">
+<title>Class 10 English | BISE Lahore Revision Lab</title>
+<style>
+:root{
+ --navy:#123b55;--blue:#176b87;--teal:#168779;
+ --bg:#f3f7fa;--card:#fff;--text:#1b2935;--muted:#637483;
+ --border:#dce5eb;--gold:#f5bd50;--red:#b83242;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+header{background:linear-gradient(130deg,#123b55,#176b87);color:#fff;padding:30px 18px}
+header .wrap,main,.nav-wrap,footer{max-width:1150px;margin:auto}
+header h1{font-size:clamp(25px,4vw,39px);line-height:1.2;margin:0 0 12px}
+header p{max-width:800px;margin:8px 0;color:#eaf5fb}
+header .tag{display:inline-block;background:#ffffff20;border:1px solid #ffffff60;border-radius:30px;padding:5px 12px;margin:4px 5px 4px 0;font-size:13px}
+nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:5}
+.nav-wrap{display:flex;gap:7px;overflow-x:auto;padding:10px}
+nav button{white-space:nowrap;background:#eaf2f6;color:var(--navy);padding:10px 13px;border-radius:8px;font-weight:bold}
+nav button.active{background:var(--navy);color:white}
+main{padding:20px 15px 45px}
+section{scroll-margin-top:75px;margin-bottom:24px}
+h2{color:var(--navy);font-size:25px;margin:0 0 12px}
+h3{color:var(--navy);margin-top:5px}
+p{margin:8px 0}
+.small{font-size:13px;color:var(--muted)}
+.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:14px}
+.card,.panel{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:18px;box-shadow:0 3px 12px #173b5510}
+.panel{padding:22px}
+.stat{font-size:29px;font-weight:800;color:var(--blue)}
+button,.btn{border:0;border-radius:8px;padding:11px 15px;background:var(--blue);color:white;font-weight:bold;cursor:pointer;font-size:14px}
+button:hover,.btn:hover{filter:brightness(.92)}
+button:focus,input:focus,select:focus,textarea:focus{outline:3px solid var(--gold);outline-offset:2px}
+.secondary{background:#e8eef2;color:var(--navy)}
+.green{background:var(--teal)}
+.danger{background:var(--red)}
+input,select,textarea{font:inherit;max-width:100%;padding:10px;border:1px solid #b9c9d4;border-radius:7px;background:#fff;color:var(--text)}
+input[type=radio],input[type=checkbox]{width:auto}
+label.field{display:block;font-weight:bold;margin:12px 0 5px}
+textarea{width:100%;min-height:85px}
+select{width:100%}
+a{color:#12678c;font-weight:bold;overflow-wrap:anywhere}
+.notice{padding:14px;border-left:5px solid var(--gold);background:#fff7e6;border-radius:7px;margin:13px 0}
+.success{background:#e7f7ee;border-left:5px solid #218456;padding:13px;border-radius:7px}
+.warning{background:#fff0f0;border-left:5px solid var(--red);padding:13px;border-radius:7px}
+.pill{display:inline-block;border-radius:30px;background:#e5f1f6;color:var(--navy);padding:3px 9px;font-size:12px;font-weight:bold}
+.progress{height:9px;background:#e4ebef;border-radius:20px;overflow:hidden;margin:10px 0}
+.progress span{height:100%;display:block;background:var(--teal);width:0}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+th,td{border:1px solid var(--border);padding:10px;text-align:left;vertical-align:top}
+th{background:#eaf2f6;color:var(--navy)}
+.table-wrap{overflow-x:auto}
+.lesson,.question{border:1px solid var(--border);border-radius:9px;padding:14px;margin:10px 0;background:#fff}
+.lesson summary,.question summary{cursor:pointer;font-weight:bold;color:var(--navy)}
+.lesson[open],.question[open]{border-color:#9ebbc9}
+.option{display:block;border:1px solid var(--border);padding:9px;border-radius:7px;margin:7px 0;cursor:pointer}
+.option:hover{background:#f0f7fa}
+.feedback{margin-top:12px;font-weight:bold}
+.hide{display:none!important}
+footer{padding:25px 15px 40px;color:var(--muted);font-size:13px}
+@media(max-width:600px){.panel{padding:15px}header{padding:24px 15px}th,td{padding:7px;font-size:12px}}
+@media print{nav,button,.no-print{display:none!important}body{background:white}.panel,.card{box-shadow:none;break-inside:avoid}section{display:block!important}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<span class="tag">PUNJAB BOARD • CLASS 10</span>
+<span class="tag">BISE LAHORE REVISION</span>
+<h1>English Interactive Revision Lab</h1>
+<p>Revise smarter. Practise regularly. Prepare confidently for your board examination.</p>
+<p>Textbook lessons • Grammar • Vocabulary • Translation • Poetry • Writing • Question bank • Past papers</p>
+<span class="tag">Learn</span><span class="tag">Practise</span><span class="tag">Test</span><span class="tag">Improve</span>
+</div>
+</header>
+
+<nav class="no-print"><div class="nav-wrap" id="navigation">
+<button class="active" data-target="home">Dashboard</button>
+<button data-target="weightage">Paper weightage</button>
+<button data-target="lessons">Lessons</button>
+<button data-target="questionbank">Question bank</button>
+<button data-target="grammar">Grammar</button>
+<button data-target="vocabulary">Vocabulary</button>
+<button data-target="translation">Translation</button>
+<button data-target="poetry">Poetry</button>
+<button data-target="writing">Writing</button>
+<button data-target="pastpapers">Past papers</button>
+<button data-target="mocktest">Mock test</button>
+<button data-target="studyplan">Study plan</button>
+</div></nav>
+
+<main>
+<section id="home" class="panel">
+<h2>Welcome to your revision dashboard</h2>
+<p>This free learning lab helps students revise Class 10 English and identify areas needing more practice.</p>
+<div class="notice"><b>Important syllabus note:</b> Check your current prescribed textbook, deleted topics, pairing scheme and official examination instructions. Lesson notes on this website are revision prompts, not a substitute for the textbook.</div>
+<div class="grid">
+<div class="card"><div class="muted">Reported written-paper total</div><div class="stat">75 marks</div><p class="small">Provisional pattern; verify the current official scheme.</p></div>
+<div class="card"><div class="muted">Textbook revision units</div><div class="stat">10</div><p class="small">Lesson-wise prompts and self-checks.</p></div>
+<div class="card"><div class="muted">Progress completed</div><div class="stat" id="progressNumber">0%</div><div class="progress"><span id="progressBar"></span></div><p class="small">Progress is saved in this browser.</p></div>
+<div class="card"><div class="muted">Last practice score</div><div class="stat" id="lastScore">—</div><p class="small">Your latest mock-test result on this device.</p></div>
+</div>
+<h3>How to use this website</h3>
+<ol>
+<li>Revise the lesson from your prescribed textbook.</li>
+<li>Attempt the related questions without looking at the answer.</li>
+<li>Practise grammar and vocabulary every day.</li>
+<li>Complete timed practice papers and review mistakes.</li>
+<li>Print worksheets when you want to practise offline.</li>
+</ol>
+<button onclick="window.print()">Print revision dashboard</button>
+</section>
+
+<section id="weightage" class="panel">
+<h2>Paper weightage and marks calculator</h2>
+<div class="warning"><b>Provisional pattern — verify before the examination.</b> The following breakdown is based on a published, non-official 2027 scheme summary. It is not confirmed here as the final BISE Lahore-issued 2027 scheme. Follow the latest official model paper and board notification if they differ.</div>
+<div class="grid">
+<div class="card"><h3>Total written paper</h3><div class="stat">75 marks</div><p>Reported duration: 2 hours 30 minutes. Check the current official paper for the actual duration and section instructions.</p></div>
+<div class="card"><h3>Marks by major segment</h3>
+<div class="table-wrap"><table>
+<tr><th>Segment</th><th>Marks</th><th>Percentage</th></tr>
+<tr><td>Objective / MCQs</td><td>19</td><td>25.3%</td></tr>
+<tr><td>Short questions</td><td>10</td><td>13.3%</td></tr>
+<tr><td>Other subjective</td><td>46</td><td>61.3%</td></tr>
+<tr><th>Total</th><th>75</th><th>100%</th></tr>
+</table></div></div>
+</div>
+<h3>Reported question-wise weightage</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Question</th><th>Segment</th><th>Marks</th><th>What to revise</th></tr></thead>
+<tbody>
+<tr><td>Q1</td><td>Correct verb forms</td><td>5</td><td>Tenses and verb forms</td></tr>
+<tr><td>Q1</td><td>Correct spellings</td><td>4</td><td>Textbook vocabulary and spelling</td></tr>
+<tr><td>Q1</td><td>Meanings of underlined words</td><td>5</td><td>Word meanings in context</td></tr>
+<tr><td>Q1</td><td>Grammar MCQs</td><td>5</td><td>Prescribed grammar skills</td></tr>
+<tr><th colspan="2">Objective subtotal</th><th>19</th><td></td></tr>
+<tr><td>Q2</td><td>Short questions: first lesson group</td><td>5</td><td>Prepare lessons 1–5 and associated review material</td></tr>
+<tr><td>Q2</td><td>Short questions: second lesson group</td><td>5</td><td>Prepare lessons 6–10 and associated review material</td></tr>
+<tr><th colspan="2">Short-question subtotal</th><th>10</th><td></td></tr>
+<tr><td>Q3</td><td>Paragraph translation into Urdu or stated alternative</td><td>8</td><td>Meaning, comprehension and language accuracy</td></tr>
+<tr><td>Q4</td><td>Poem summary or stanza explanation</td><td>5</td><td>Central idea, context and interpretation</td></tr>
+<tr><td>Q5</td><td>Essay or paragraph</td><td>15</td><td>Organisation, relevance, grammar and spelling</td></tr>
+<tr><td>Q6</td><td>Direct / indirect narration</td><td>5</td><td>Reporting statements, questions and commands</td></tr>
+<tr><td>Q7</td><td>Pairs of words in sentences</td><td>5</td><td>Meanings and correct usage</td></tr>
+<tr><td>Q8</td><td>Urdu-to-English translation or stated alternative</td><td>8</td><td>Tenses, word order and subject–verb agreement</td></tr>
+<tr><th colspan="2">Other subjective subtotal</th><th>46</th><td></td></tr>
+<tr><th colspan="2">Grand total</th><th>75</th><td></td></tr>
+</tbody></table></div>
+<p class="small">This question-wise allocation is a provisional reference, not a guarantee of the next examination paper. Confirm the current official scheme and exact choice structure.</p>
+<h3>Calculate your target marks</h3>
+<div class="grid">
+<div class="card"><label class="field" for="targetMCQ">Objective target / 19</label><input id="targetMCQ" type="number" min="0" max="19" value="16"></div>
+<div class="card"><label class="field" for="targetShort">Short questions target / 10</label><input id="targetShort" type="number" min="0" max="10" value="8"></div>
+<div class="card"><label class="field" for="targetSubjective">Other subjective target / 46</label><input id="targetSubjective" type="number" min="0" max="46" value="38"></div>
+</div>
+<p><button onclick="calculateTarget()">Calculate total</button></p>
+<div id="targetResult" class="success" aria-live="polite">Enter your expected marks and calculate your target.</div>
+<p><a href="https://www.biselahore.com/notifications" target="_blank" rel="noopener">BISE Lahore official notifications</a></p>
+<p><a href="https://pectaa.edu.pk/curriculum-compliance/" target="_blank" rel="noopener">PECTAA curriculum and compliance</a></p>
+</section>
+
+<section id="lessons" class="panel">
+<h2>Textbook lesson revision</h2>
+<p>Read each lesson in your prescribed book. Open a lesson to review its central idea and attempt the questions. Mark it complete after practising.</p>
+<div id="lessonList"></div>
+</section>
+
+<section id="questionbank" class="panel">
+<h2>Complete revision question bank</h2>
+<p>These are original practice prompts aligned to the listed lesson topics and common English skills. They are <b>not represented as verbatim questions from actual past papers</b>. Use the textbook for exact facts, quotations and exercise answers.</p>
+<div class="grid">
+<div class="card"><label class="field" for="filterArea">Syllabus area</label>
+<select id="filterArea">
+<option value="all">All areas</option><option value="textbook">Textbook</option><option value="grammar">Grammar</option><option value="vocabulary">Vocabulary</option><option value="translation">Translation</option><option value="writing">Writing and poetry</option>
+</select>
+<label class="field" for="filterType">Question type</label>
+<select id="filterType"><option value="all">All types</option><option value="short">Short answer</option><option value="mcq">MCQ</option><option value="written">Written response</option></select>
+<button onclick="renderBank()">Filter questions</button></div>
+<div class="card"><h3>Self-assessment routine</h3><ol><li>Attempt without notes.</li><li>Reveal the answer guidance.</li><li>Check your textbook.</li><li>Mark difficult questions for another attempt.</li></ol><p id="bankCount" class="small"></p></div>
+</div>
+<div id="bankResults"></div>
+</section>
+
+<section id="grammar" class="panel">
+<h2>Grammar practice</h2>
+<p>Attempt the MCQs. Choose one answer, then press Check. Review the explanation before moving to the next question.</p>
+<div id="grammarQuiz"></div>
+<button onclick="checkQuiz('grammarQuiz','grammarResult')">Check grammar answers</button>
+<button class="secondary" onclick="resetQuiz('grammarQuiz','grammarResult')">Reset</button>
+<div id="grammarResult" class="feedback" aria-live="polite"></div>
+<h3>Quick grammar checklist</h3>
+<ul>
+<li>Identify the subject before choosing a verb.</li>
+<li>Check the tense and time expression.</li>
+<li>For passive voice, use the correct form of be + past participle.</li>
+<li>For narration, check pronouns, tense, time words and sentence type.</li>
+<li>Check capital letters and punctuation.</li>
+</ul>
+</section>
+
+<section id="vocabulary" class="panel">
+<h2>Vocabulary and pairs of words</h2>
+<p>Learn the distinction and write your own sentence for each word. The list below is a starter bank; add vocabulary from every current textbook lesson.</p>
+<div class="table-wrap"><table>
+<tr><th>Word A</th><th>Meaning</th><th>Word B</th><th>Meaning</th></tr>
+<tr><td>Role</td><td>A function or part</td><td>Roll</td><td>Turn over; a small bread</td></tr>
+<tr><td>Profit</td><td>Financial gain</td><td>Prophet</td><td>A person who delivers a divine message</td></tr>
+<tr><td>Principal</td><td>Head of a school; main</td><td>Principle</td><td>A rule or belief</td></tr>
+<tr><td>Accept</td><td>Receive or agree to</td><td>Except</td><td>Excluding</td></tr>
+<tr><td>Advice</td><td>A recommendation (noun)</td><td>Advise</td><td>To recommend (verb)</td></tr>
+<tr><td>Peace</td><td>Freedom from conflict</td><td>Piece</td><td>A part of something</td></tr>
+<tr><td>Weather</td><td>Atmospheric conditions</td><td>Whether</td><td>Expresses alternatives</td></tr>
+<tr><td>Lose</td><td>Fail to keep or win</td><td>Loose</td><td>Not tight</td></tr>
+<tr><td>Quiet</td><td>Silent or calm</td><td>Quite</td><td>Fairly or completely</td></tr>
+<tr><td>Stationary</td><td>Not moving</td><td>Stationery</td><td>Writing materials</td></tr>
+</table></div>
+<label class="field" for="vocabPractice">Write a pair of words with example sentences</label>
+<textarea id="vocabPractice" placeholder="Example: accept / except — write one sentence for each word."></textarea>
+<button onclick="saveText('vocabPractice','vocabSaved')">Save my practice on this device</button>
+<p id="vocabSaved" class="small"></p>
+</section>
+
+<section id="translation" class="panel">
+<h2>Translation practice</h2>
+<p>Translate the Urdu sentences into English before opening the model answers. Answers may vary if the meaning and grammar are correct.</p>
+<div id="translationList"></div>
+<h3>Translation checklist</h3>
+<ul><li>Identify the subject and verb.</li><li>Choose a tense that matches the meaning.</li><li>Check articles, prepositions and word order.</li><li>Preserve the original meaning instead of translating mechanically.</li><li>Check spelling and punctuation.</li></ul>
+</section>
+
+<section id="poetry" class="panel">
+<h2>Poetry revision</h2>
+<div class="grid">
+<div class="card"><h3>Time</h3><p>Revise the central idea, speaker's message, imagery and vocabulary using the exact prescribed poem.</p><p><b>Practice:</b> Explain how the poem presents the value or effects of time. Support your answer with accurate details from the textbook.</p></div>
+<div class="card"><h3>The Road Not Taken</h3><p>Revise the speaker's choice, imagery of roads, reflection and possible interpretations.</p><p><b>Practice:</b> Explain how the two roads help develop the poem's ideas. Check the actual lines before quoting.</p></div>
+</div>
+<h3>Poetry answer checklist</h3>
+<ul><li>Identify the poem and poet as printed in the textbook.</li><li>Explain the context if asked.</li><li>Explain the stanza in clear, simple language.</li><li>Identify imagery or a figure of speech where relevant.</li><li>State the central idea without inventing quotations.</li></ul>
+<label class="field" for="poetryPractice">Write a short poem summary or stanza explanation</label>
+<textarea id="poetryPractice" placeholder="Write your answer here. Compare it with the prescribed text and your teacher's guidance."></textarea>
+<button onclick="saveText('poetryPractice','poetrySaved')">Save my poetry practice</button>
+<p id="poetrySaved" class="small"></p>
+</section>
+
+<section id="writing" class="panel">
+<h2>Essay, paragraph and written expression</h2>
+<div class="grid">
+<div class="card"><h3>Essay planning framework</h3><ol><li>Introduction: introduce the topic.</li><li>Body paragraph 1: main point and example.</li><li>Body paragraph 2: further explanation or solution.</li><li>Body paragraph 3 if appropriate: effects or recommendations.</li><li>Conclusion: summarise the central message.</li></ol></div>
+<div class="card"><h3>Possible practice topics</h3><ul><li>Importance of Education</li><li>My Aim in Life</li><li>Environmental Protection</li><li>Benefits and Risks of Technology</li><li>Cleanliness in Our School</li><li>Value of Time</li><li>Pakistan and Responsible Citizenship</li></ul><p class="small">Practise topics are not predictions of the examination paper.</p></div>
+</div>
+<label class="field" for="essayTopic">Choose a practice topic</label>
+<select id="essayTopic"><option>Importance of Education</option><option>Environmental Protection</option><option>Value of Time</option><option>Benefits and Risks of Technology</option><option>Cleanliness in Our School</option><option>My Aim in Life</option></select>
+<label class="field" for="essayOutline">Build your outline</label>
+<textarea id="essayOutline" rows="6" placeholder="Introduction&#10;Main point 1 + example&#10;Main point 2 + example&#10;Solutions / lessons&#10;Conclusion"></textarea>
+<button onclick="saveText('essayOutline','essaySaved')">Save outline</button>
+<p id="essaySaved" class="small"></p>
+<h3>Writing self-check</h3>
+<label class="option"><input type="checkbox"> I answered the actual topic.</label>
+<label class="option"><input type="checkbox"> My ideas are arranged logically.</label>
+<label class="option"><input type="checkbox"> I checked grammar, spelling and punctuation.</label>
+<label class="option"><input type="checkbox"> I followed the required length and format.</label>
+</section>
+
+<section id="pastpapers" class="panel">
+<h2>Past papers and official resources</h2>
+<div class="notice">Actual past papers help students understand question styles, but papers from older textbook editions may not match the current syllabus. Verify every question against the current prescribed textbook and official scheme.</div>
+<div class="grid">
+<div class="card"><span class="pill">BOARD REFERENCE</span><h3>BISE Lahore Matric model paper</h3><p>Consult the board-hosted Matric model paper. It is a historical reference and should not be mistaken for confirmation of the final 2027 scheme.</p><p><a href="https://home.biselahore.com/downloads/Model%20Papers/Matric/ModelPapers_10th.pdf" target="_blank" rel="noopener">Open model paper PDF</a></p></div>
+<div class="card"><span class="pill">PAST PAPERS</span><h3>Science group</h3><p><a href="https://pakboards.com/past-papers/bise-lahore/10/science/english" target="_blank" rel="noopener">Browse Lahore English papers</a></p></div>
+<div class="card"><span class="pill">PAST PAPERS</span><h3>Arts group</h3><p><a href="https://pakboards.com/past-papers/bise-lahore/10/arts/english" target="_blank" rel="noopener">Browse Lahore English papers</a></p></div>
+<div class="card"><span class="pill">CURRICULUM</span><h3>PECTAA resources</h3><p><a href="https://pectaa.edu.pk/curriculum-compliance/" target="_blank" rel="noopener">Curriculum and compliance</a></p><p><a href="https://pectaa.edu.pk/books-and-publications/" target="_blank" rel="noopener">Books and publications</a></p></div>
+</div>
+<h3>Past-paper analysis log</h3>
+<div class="grid">
+<div class="card"><label class="field" for="paperYear">Paper year / session</label><input id="paperYear" placeholder="e.g. 2025 annual"></div>
+<div class="card"><label class="field" for="paperGroup">Group</label><select id="paperGroup"><option>Science</option><option>Arts</option><option>Not sure</option></select></div>
+<div class="card"><label class="field" for="paperScore">Marks obtained</label><input id="paperScore" type="number" min="0" max="75" placeholder="0–75"></div>
+</div>
+<label class="field" for="paperMistakes">Mistakes and revision priorities</label>
+<textarea id="paperMistakes" placeholder="Record weak grammar areas, missed textbook questions, writing issues and time-management problems."></textarea>
+<button onclick="savePaperLog()">Save paper analysis</button>
+<p id="paperLogSaved" class="small"></p>
+</section>
+
+<section id="mocktest" class="panel">
+<h2>Interactive board-style mini mock test</h2>
+<p><b>10 MCQs • 10 practice marks.</b> These are original practice questions, not an official paper. The objective score is automatically calculated.</p>
+<div class="notice">Attempt without notes. For a full examination simulation, also complete the written tasks in your notebook and follow the current official paper instructions.</div>
+<div id="mockQuiz"></div>
+<button onclick="checkQuiz('mockQuiz','mockResult',true)">Submit mock test</button>
+<button class="secondary" onclick="resetQuiz('mockQuiz','mockResult')">Try again</button>
+<div id="mockResult" class="feedback" aria-live="polite"></div>
+<h3>Written practice tasks</h3>
+<ol><li>Answer five short questions from your current textbook exercises.</li><li>Complete a translation exercise using the format specified in the current scheme.</li><li>Write a poem summary or stanza explanation.</li><li>Write an essay or paragraph and proofread it.</li><li>Practise narration and pairs of words in your notebook.</li></ol>
+<label class="field" for="mockReflection">What will you revise next?</label>
+<textarea id="mockReflection" placeholder="Record your errors and the lesson or grammar skill to revise next."></textarea>
+<button onclick="saveText('mockReflection','mockReflectionSaved')">Save reflection</button>
+<p id="mockReflectionSaved" class="small"></p>
+</section>
+
+<section id="studyplan" class="panel">
+<h2>14-day revision plan</h2>
+<p>Adjust this plan to the official syllabus, your current textbook and the time remaining before the examination.</p>
+<div class="table-wrap"><table>
+<tr><th>Day</th><th>Focus</th><th>Daily task</th></tr>
+<tr><td>1</td><td>Lessons 1–2</td><td>Read, summarise and practise short answers.</td></tr>
+<tr><td>2</td><td>Lesson 3</td><td>Textbook revision and vocabulary.</td></tr>
+<tr><td>3</td><td>Lessons 4–5</td><td>Short answers and story themes.</td></tr>
+<tr><td>4</td><td>Grammar I</td><td>Tenses, verb forms and subject–verb agreement.</td></tr>
+<tr><td>5</td><td>Lessons 6–7</td><td>Textbook questions and poetry practice.</td></tr>
+<tr><td>6</td><td>Lessons 8–10</td><td>Short answers, themes and vocabulary.</td></tr>
+<tr><td>7</td><td>Vocabulary</td><td>Pairs of words, spellings and meanings.</td></tr>
+<tr><td>8</td><td>Grammar II</td><td>Narration, passive voice and punctuation.</td></tr>
+<tr><td>9</td><td>Translation</td><td>Urdu-to-English and the prescribed alternative.</td></tr>
+<tr><td>10</td><td>Writing</td><td>Essay/paragraph planning and a timed response.</td></tr>
+<tr><td>11</td><td>Poetry</td><td>Summaries, stanza explanation and central ideas.</td></tr>
+<tr><td>12</td><td>Past paper 1</td><td>Attempt and analyse mistakes.</td></tr>
+<tr><td>13</td><td>Past paper 2</td><td>Timed attempt; focus on weak sections.</td></tr>
+<tr><td>14</td><td>Final review</td><td>Revise error log, spelling and key concepts.</td></tr>
+</table></div>
+<h3>Daily checklist</h3>
+<label class="option"><input type="checkbox"> Textbook reading completed</label>
+<label class="option"><input type="checkbox"> At least 10 questions attempted</label>
+<label class="option"><input type="checkbox"> Grammar practised</label>
+<label class="option"><input type="checkbox"> Errors reviewed and corrected</label>
+<button onclick="window.print()">Print study plan</button>
+</section>
+</main>
+
+<footer>
+<p><b>Class 10 English Interactive Revision Lab</b></p>
+<p>Independent educational revision resource. Not affiliated with BISE Lahore or PECTAA. Official syllabus, examination scheme, paper pattern, marks and instructions take precedence over this website.</p>
+<p>Progress and saved notes are stored locally in the browser when available. Clearing browser data may erase them.</p>
+</footer>
+
+<script>
+const lessons=[
+{title:"Hazrat Muhammad (SAW) – Social Reforms for the Rights of Women, Orphans and Slaves",idea:"Revise the lesson's account of dignity, justice, compassion and the rights of vulnerable people. Check all historical details in the textbook.",qs:["What social reforms are highlighted in the lesson?","How does the lesson emphasise justice and compassion?","What responsibilities does it teach towards vulnerable people?"]},
+{title:"My Beloved Pakistan",idea:"Revise the text's ideas about Pakistan, citizenship, responsibility and contributions to national progress.",qs:["What responsibilities do citizens have towards Pakistan?","How can young people contribute positively to society?","Explain the lesson's central message in your own words."]},
+{title:"Digital Globalization: Transforming the English Language",idea:"Review how digital communication influences English language learning, communication and global interaction.",qs:["How does digital communication influence English?","Give two benefits and two challenges of digital globalisation.","How can students use digital tools responsibly?"]},
+{title:"The Earth: Act Now for Tomorrow",idea:"Revise the environmental issues, consequences and actions discussed in the prescribed text.",qs:["Why should people protect the environment?","What actions can students take to protect the Earth?","Explain the importance of acting now for the future."]},
+{title:"The Happy Prince",idea:"Review the characters, events and central themes of the prescribed story. Use accurate events from the text.",qs:["How do the characters show compassion or sacrifice?","Write a character sketch supported by events.","Explain the story's central message."]},
+{title:"Drug Abuse",idea:"Revise the causes, effects, prevention and support strategies presented in the lesson.",qs:["What risks associated with drug abuse are described?","How can families and schools help prevent drug misuse?","Write an awareness message based on the lesson."]},
+{title:"Time",idea:"Revise the prescribed poem's central idea, imagery, vocabulary and message. Check the exact poem in your book.",qs:["What is the central idea of the poem?","Explain an assigned stanza in context.","Which images or expressions support the poem's message?"]},
+{title:"Pollution-Free Pakistan with Greenery All Around",idea:"Review pollution, environmental responsibility, greenery and practical community solutions in the lesson.",qs:["How can a community reduce pollution?","What can schools do to encourage greenery?","Suggest a realistic environmental action plan."]},
+{title:"The Road Not Taken",idea:"Review the speaker's choice, the imagery of roads and the poem's reflection on decisions. Interpret the poem using its actual lines.",qs:["What choice does the speaker face?","How does the road imagery support the poem?","Explain the poem's central idea without relying on unsupported claims."]},
+{title:"The Three Questions",idea:"Review the characters, main events and lesson conveyed by the story. Confirm plot details from the prescribed text.",qs:["What questions guide the story?","How do events affect the king's understanding?","Explain the story's message with a relevant event."]}
+];
+
+const bank=[
+{area:"textbook",type:"short",q:"What social reforms are emphasised in the lesson about the rights of women, orphans and slaves?",a:"Describe the lesson's key ideas accurately and support your answer with details from the prescribed text."},
+{area:"textbook",type:"short",q:"How can citizens contribute to Pakistan's progress?",a:"Give relevant examples of responsible citizenship and connect them to the lesson My Beloved Pakistan."},
+{area:"textbook",type:"short",q:"How can digital globalisation change English language learning?",a:"Discuss relevant benefits and challenges described in the textbook."},
+{area:"textbook",type:"short",q:"What does The Earth: Act Now for Tomorrow teach about environmental responsibility?",a:"State the central message and support it with accurate details from the lesson."},
+{area:"textbook",type:"short",q:"How do the characters develop the message of The Happy Prince?",a:"Refer to specific events in the prescribed story and explain their significance."},
+{area:"textbook",type:"short",q:"What prevention strategies are discussed in Drug Abuse?",a:"Use the textbook's information about prevention, consequences and appropriate support."},
+{area:"textbook",type:"short",q:"What is the central idea of the poem Time?",a:"Explain the poem's main message in your own words and verify details against the prescribed text."},
+{area:"textbook",type:"short",q:"How can a community work towards a pollution-free environment?",a:"Suggest practical actions that match the lesson, such as responsible waste management and greenery."},
+{area:"textbook",type:"short",q:"What choice or reflection is explored in The Road Not Taken?",a:"Explain the speaker's reflection with reference to the actual poem."},
+{area:"textbook",type:"short",q:"What lesson is conveyed by the events of The Three Questions?",a:"State the story's message and support it with an accurate event."},
+{area:"grammar",type:"mcq",q:"Choose the correct form: She ___ to school every day.",opts:["go","goes","going","gone"],correct:1,a:"A third-person singular subject takes goes in the present simple."},
+{area:"grammar",type:"mcq",q:"If he ___ hard, he will succeed.",opts:["work","works","worked","working"],correct:1,a:"The first conditional normally uses the present simple in the if-clause."},
+{area:"grammar",type:"mcq",q:"He said, “I am tired.” Choose the correct reported form.",opts:["He said I am tired.","He said that he was tired.","He says he tired.","He said that he tired."],correct:1,a:"With a past reporting verb, the tense and pronoun commonly change."},
+{area:"grammar",type:"mcq",q:"Choose the correctly punctuated sentence.",opts:["where are you going.","Where are you going?","Where are you going,","where are you going?"],correct:1,a:"Begin the question with a capital letter and end it with a question mark."},
+{area:"grammar",type:"mcq",q:"___ it was raining, the match continued.",opts:["Because","Although","Therefore","Unless"],correct:1,a:"Although expresses contrast."},
+{area:"grammar",type:"mcq",q:"Neither of the boys ___ absent.",opts:["are","were","is","have"],correct:2,a:"Neither is treated as singular in this construction."},
+{area:"grammar",type:"mcq",q:"Choose the correct spelling.",opts:["enviroment","environment","enviornment","envirnoment"],correct:1,a:"Environment is the correct spelling."},
+{area:"grammar",type:"mcq",q:"Which sentence contains a simile?",opts:["Time is a thief.","The wind whispered.","He is as brave as a lion.","The stars danced."],correct:2,a:"A simile makes a comparison using like or as."},
+{area:"grammar",type:"mcq",q:"Choose the correct passive form: They clean the room.",opts:["The room cleaned them.","The room is cleaned by them.","The room was clean.","The room has cleaning."],correct:1,a:"Present simple passive uses am/is/are + past participle."},
+{area:"grammar",type:"mcq",q:"She bought ___ umbrella.",opts:["a","an","the","no article"],correct:1,a:"Umbrella begins with a vowel sound."},
+{area:"vocabulary",type:"short",q:"Explain the difference between role and roll.",a:"Role means a part or function. Roll can mean to turn over or a small bread. Write one correct sentence for each."},
+{area:"vocabulary",type:"short",q:"Explain the difference between prophet and profit.",a:"A prophet delivers a religious message; profit is financial gain."},
+{area:"vocabulary",type:"short",q:"Explain the difference between principal and principle.",a:"Principal can mean a school head or something most important; principle means a rule or belief."},
+{area:"translation",type:"written",q:"Translate into English: محنت کامیابی کی کنجی ہے۔",a:"Hard work is the key to success."},
+{area:"translation",type:"written",q:"Translate into English: ہمیں اپنے ماحول کو صاف رکھنا چاہیے۔",a:"We should keep our environment clean."},
+{area:"translation",type:"written",q:"Translate into English: وقت بہت قیمتی ہے۔",a:"Time is very precious."},
+{area:"translation",type:"written",q:"Translate into English: طلبہ کو روزانہ کتابیں پڑھنی چاہئیں۔",a:"Students should read books daily."},
+{area:"translation",type:"written",q:"Translate into English: ہمیں ضرورت مند لوگوں کی مدد کرنی چاہیے۔",a:"We should help people in need."},
+{area:"writing",type:"written",q:"Plan an essay on the importance of education.",a:"Plan an introduction, benefits, examples, challenges or solutions, and a conclusion."},
+{area:"writing",type:"written",q:"Write a paragraph on keeping your school clean.",a:"Include a topic sentence, practical actions, shared responsibility and a conclusion."},
+{area:"writing",type:"short",q:"What should a good stanza explanation contain?",a:"Identify the poem and poet as printed in the book, give context if required, explain the lines and connect them to the central idea."},
+{area:"writing",type:"written",q:"Prepare a short awareness message about preventing drug misuse.",a:"Use respectful, factual language and encourage students to seek help from trusted adults or qualified professionals."}
+];
+
+const grammarItems=bank.filter(x=>x.area==="grammar");
+const mockItems=[
+{q:"The students ___ preparing for the examination.",opts:["is","are","was","has"],correct:1,explain:"Plural subject students takes are."},
+{q:"Choose the correct spelling.",opts:["responsibility","responsiblity","responsibilty","responsibillity"],correct:0,explain:"The correct spelling is responsibility."},
+{q:"Vulnerable means:",opts:["easily harmed","very wealthy","always angry","unusually fast"],correct:0,explain:"Vulnerable means exposed to the possibility of harm."},
+{q:"He studied hard; ___, he passed.",opts:["however","therefore","although","unless"],correct:1,explain:"Therefore introduces a result."},
+{q:"She said, “I can swim.”",opts:["She said she can swim.","She said that she could swim.","She said I could swim.","She says she could swim."],correct:1,explain:"Can commonly changes to could after a past reporting verb."},
+{q:"The gardener planted a tree. Choose the passive form.",opts:["A tree is planted by the gardener.","A tree was planted by the gardener.","A tree has planted by the gardener.","A tree planted the gardener."],correct:1,explain:"Past simple passive uses was/were + past participle."},
+{q:"The leaves danced in the wind. Identify the figure of speech.",opts:["Simile","Personification","Hyperbole","Oxymoron"],correct:1,explain:"Personification gives a human action to something non-human."},
+{q:"The school play was her main ___.",opts:["role","roll","sole","soul"],correct:0,explain:"Role means a part or function."},
+{q:"Choose the correct article: He is ___ honest man.",opts:["a","an","the","no article"],correct:1,explain:"Honest begins with a vowel sound."},
+{q:"Choose the correct sentence.",opts:["Although he was tired, he continued working.","Although he was tired but he continued working.","Although he tired continued.","He although tired, working."],correct:0,explain:"Although marks contrast; do not add but in the same clause structure."}
+];
+
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function getSaved(key, fallback){try{const v=localStorage.getItem(key);return v===null?fallback:JSON.parse(v)}catch(e){return fallback}}
+function putSaved(key,value){try{localStorage.setItem(key,JSON.stringify(value))}catch(e){}}
+
+function renderLessons(){
+ const done=getSaved("englishLessonsDone",[]);
+ document.getElementById("lessonList").innerHTML=lessons.map((l,i)=>`
+ <details class="lesson"><summary>Lesson ${i+1}: ${esc(l.title)} ${done.includes(i)?"✓":""}</summary>
+ <p><b>Revision focus:</b> ${esc(l.idea)}</p><h4>Practice questions</h4>
+ <ol>${l.qs.map(q=>`<li>${esc(q)}</li>`).join("")}</ol>
+ <label class="option"><input type="checkbox" ${done.includes(i)?"checked":""} onchange="toggleLesson(${i},this.checked)"> Mark this lesson revised</label>
+ <label class="field">My notes</label><textarea id="lessonNote${i}" placeholder="Write your own notes or difficult questions...">${esc(getSaved("lessonNote"+i,""))}</textarea>
+ <button class="secondary" onclick="saveText('lessonNote${i}','lessonSave${i}')">Save notes</button><span id="lessonSave${i}" class="small"></span>
+ </details>`).join("");
+ updateProgress();
+}
+function toggleLesson(i,checked){
+ let done=getSaved("englishLessonsDone",[]);
+ done=checked?[...new Set([...done,i])]:done.filter(x=>x!==i);
+ putSaved("englishLessonsDone",done);renderLessons();
+}
+function updateProgress(){
+ const done=getSaved("englishLessonsDone",[]);
+ const pct=Math.round(done.length/lessons.length*100);
+ document.getElementById("progressNumber").textContent=pct+"%";
+ document.getElementById("progressBar").style.width=pct+"%";
+ const score=getSaved("englishLastScore",null);
+ document.getElementById("lastScore").textContent=score===null?"—":score+"/10";
+}
+function renderBank(){
+ const area=document.getElementById("filterArea").value;
+ const type=document.getElementById("filterType").value;
+ const items=bank.filter(x=>(area==="all"||x.area===area)&&(type==="all"||x.type===type));
+ document.getElementById("bankCount").textContent="Showing "+items.length+" practice questions.";
+ document.getElementById("bankResults").innerHTML=items.map((x,i)=>`
+ <details class="question"><summary>${i+1}. [${esc(x.area)} / ${esc(x.type)}] ${esc(x.q)}</summary>
+ ${x.opts?x.opts.map((o,j)=>`<label class="option"><input type="radio" name="bank${i}" value="${j}"> ${esc(o)}</label>`).join(""):""}
+ <p><b>Answer guidance:</b> ${esc(x.a||"")}</p>
+ ${x.correct!==undefined?`<p>Correct option: ${esc(x.opts[x.correct])}</p>`:""}
+ <label class="field">Self-assessment</label><select><option>Not attempted</option><option>Secure</option><option>Revise again</option><option>Ask teacher</option></select>
+ </details>`).join("")||"<p>No questions found.</p>";
+}
+function quizHTML(items,id){
+ document.getElementById(id).innerHTML=items.map((x,i)=>`
+ <div class="question"><p><b>${i+1}. ${esc(x.q)}</b></p>
+ ${x.opts.map((o,j)=>`<label class="option"><input type="radio" name="${id}_${i}" value="${j}"> ${esc(o)}</label>`).join("")}
+ <p class="small hide" id="${id}_explain${i}">${esc(x.a||x.explain||"Review the correct answer and revise the relevant skill.")}</p>
+ </div>`).join("");
+}
+function checkQuiz(id,resultId,saveScore=false){
+ const items=id==="mockQuiz"?mockItems:grammarItems;
+ let score=0;
+ items.forEach((x,i)=>{
+ const chosen=document.querySelector(`input[name="${id}_${i}"]:checked`);
+ const exp=document.getElementById(`${id}_explain${i}`);
+ exp.classList.remove("hide");
+ if(chosen&&Number(chosen.value)===x.correct){score++;}
+ });
+ document.getElementById(resultId).textContent=`Your score: ${score}/${items.length}. Review the explanations shown under the questions.`;
+ if(saveScore){putSaved("englishLastScore",score);updateProgress();}
+}
+function resetQuiz(id,resultId){
+ const items=id==="mockQuiz"?mockItems:grammarItems;
+ items.forEach((x,i)=>{
+ document.querySelectorAll(`input[name="${id}_${i}"]`).forEach(r=>r.checked=false);
+ const exp=document.getElementById(`${id}_explain${i}`);
+ if(exp)exp.classList.add("hide");
+ });
+ document.getElementById(resultId).textContent="";
+}
+function calculateTarget(){
+ const fields=[["targetMCQ",19],["targetShort",10],["targetSubjective",46]];
+ let total=0,details=[];
+ fields.forEach(([id,max])=>{
+ let el=document.getElementById(id);
+ let n=Number(el.value);
+ if(!Number.isFinite(n))n=0;
+ n=Math.max(0,Math.min(max,n));el.value=n;total+=n;
+ details.push(n+"/"+max);
+ });
+ document.getElementById("targetResult").textContent=`Target score: ${total}/75 (${(total/75*100).toFixed(1)}%). Segment targets: ${details.join(" • ")}.`;
+}
+function saveText(id,statusId){
+ const el=document.getElementById(id);
+ putSaved("englishText_"+id,el.value);
+ document.getElementById(statusId).textContent="Saved on this device.";
+}
+function savePaperLog(){
+ const log={year:document.getElementById("paperYear").value,group:document.getElementById("paperGroup").value,score:document.getElementById("paperScore").value,mistakes:document.getElementById("paperMistakes").value};
+ putSaved("englishPaperLog",log);
+ document.getElementById("paperLogSaved").textContent="Paper analysis saved on this device.";
+}
+const translations=[
+["محنت کامیابی کی کنجی ہے۔","Hard work is the key to success."],
+["ہمیں اپنے ماحول کو صاف رکھنا چاہیے۔","We should keep our environment clean."],
+["وقت بہت قیمتی ہے۔","Time is very precious."],
+["طلبہ کو روزانہ کتابیں پڑھنی چاہئیں۔","Students should read books daily."],
+["ہمیں ضرورت مند لوگوں کی مدد کرنی چاہیے۔","We should help people in need."]
+];
+function renderTranslations(){
+ document.getElementById("translationList").innerHTML=translations.map((x,i)=>`
+ <details class="question"><summary>${i+1}. ${esc(x[0])}</summary>
+ <label class="field" for="trans${i}">Your English translation</label>
+ <textarea id="trans${i}" placeholder="Write your translation...">${esc(getSaved("trans"+i,""))}</textarea>
+ <button class="secondary" onclick="saveText('trans${i}','transSaved${i}')">Save response</button> <span id="transSaved${i}" class="small"></span>
+ <p><b>Model answer:</b> ${esc(x[1])}</p>
+ </details>`).join("");
+}
+document.querySelectorAll("nav button").forEach(btn=>{
+ btn.addEventListener("click",()=>{
+ document.querySelectorAll("nav button").forEach(b=>b.classList.remove("active"));
+ btn.classList.add("active");
+ document.getElementById(btn.dataset.target).scrollIntoView({behavior:"smooth",block:"start"});
+ });
+});
+renderLessons();
+renderBank();
+quizHTML(grammarItems,"grammarQuiz");
+quizHTML(mockItems,"mockQuiz");
+renderTranslations();
+const savedLog=getSaved("englishPaperLog",null);
+if(savedLog){
+ document.getElementById("paperYear").value=savedLog.year||"";
+ document.getElementById("paperGroup").value=savedLog.group||"Science";
+ document.getElementById("paperScore").value=savedLog.score||"";
+ document.getElementById("paperMistakes").value=savedLog.mistakes||"";
+}
+document.querySelectorAll("textarea").forEach(el=>{
+ const saved=getSaved("englishText_"+el.id,null);
+ if(saved!==null)el.value=saved;
+});
+updateProgress();
+</script>
+</body>
+</html>
+
